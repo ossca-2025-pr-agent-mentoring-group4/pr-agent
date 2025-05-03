@@ -78,9 +78,9 @@ require_can_be_split_review=false
 require_security_review=true
 require_ticket_analysis_review=true
 # general options
-persistent_comment=true
-extra_instructions = "Ignore the new_feature function. Only focus on test_behavior"
-final_update_message = true
+persistent_comment=false
+extra_instructions = ""
+final_update_message=true
 # review labels
 enable_review_labels_security=true
 enable_review_labels_effort=true
