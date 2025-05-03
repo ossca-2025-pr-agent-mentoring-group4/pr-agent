@@ -79,8 +79,8 @@ require_security_review=true
 require_ticket_analysis_review=true
 # general options
 persistent_comment=true
-extra_instructions = ""
-final_update_message=false
+extra_instructions = "Focus only on the function calculate_summary."
+final_update_message=true
 # review labels
 enable_review_labels_security=true
 enable_review_labels_effort=true
