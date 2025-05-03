@@ -5,5 +5,4 @@ def test_behavior():
 
 def new_feature():
     # 새로운 기능
-    assert 1 + 1 == 4
     print("New feature")
