@@ -78,7 +78,7 @@ require_can_be_split_review=false
 require_security_review=true
 require_ticket_analysis_review=true
 # general options
-persistent_comment=false
+persistent_comment=true
 extra_instructions = ""
 final_update_message=true
 # review labels
