@@ -79,7 +79,7 @@ require_security_review=true
 require_ticket_analysis_review=true
 # general options
 persistent_comment=true
-extra_instructions = ""
+extra_instructions = "Ignore the new_feature function. Only focus on test_behavior"
 final_update_message = true
 # review labels
 enable_review_labels_security=true
