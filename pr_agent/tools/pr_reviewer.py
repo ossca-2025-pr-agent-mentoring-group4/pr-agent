@@ -1,7 +1,5 @@
 import copy
 import datetime
-import traceback
-from collections import OrderedDict
 from functools import partial
 from typing import List, Tuple
 
@@ -263,7 +261,7 @@ class PRReviewer:
         # Add custom labels from the review prediction (effort, security)
         self.set_review_labels(data)
 
-        if markdown_text == None or len(markdown_text) == 0:
+        if not markdown_text or len(markdown_text) == 0:
             markdown_text = ""
 
         return markdown_text
@@ -316,7 +314,7 @@ class PRReviewer:
             get_logger().exception(f"Failed to remove previous review comment, error: {e}")
 
     def _can_run_incremental_review(self) -> bool:
-        """Checks if we can run incremental review according the various configurations and previous review"""
+        """Checks if we can run incremental review according the various configurations and previous review."""
         # checking if running is auto mode but there are no new commits
         if self.is_auto and not self.incremental.first_new_commit_sha:
             get_logger().info(f"Incremental review is enabled for {self.pr_url} but there are no new commits")
