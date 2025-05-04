@@ -1,7 +1,5 @@
 import copy
 import datetime
-import traceback
-from collections import OrderedDict
 from functools import partial
 from typing import List, Tuple
 
@@ -263,7 +261,7 @@ class PRReviewer:
         # Add custom labels from the review prediction (effort, security)
         self.set_review_labels(data)
 
-        if markdown_text == None or len(markdown_text) == 0:
+        if markdown_text is None or len(markdown_text) == 0:
             markdown_text = ""
 
         return markdown_text
